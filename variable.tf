@@ -21,14 +21,14 @@ variable "user" {
 
 variable "docker_compose_str" {
     description = "The entire docker compose file to write."
-    type = string
+    type = "docker-compose.yaml"
 }
 
 
 
 variable "persistent_volume_size_gb" {
     description = "The size of the volume mounted"
-    type = number
+    type = 8
 }
 
 variable "persistent_volume_mount_path" {
